@@ -1,20 +1,21 @@
 from dotenv import find_dotenv, load_dotenv
-from os import getenv
+from libs.hello_world import HelloWorld
 
 load_dotenv(find_dotenv())
 
 
 class App:
 
-    def __init__(self):
-        pass
+    def __init__(self, greetings: HelloWorld):
+        self.greetings = greetings
 
     def run(self):
-        print("{}".format(getenv('TEST_STRING', "Env file not loaded")))
+        print(self.greetings.greet())
 
 
 def main():
-    App().run()
+    hello_world = HelloWorld()
+    App(greetings=hello_world).run()
 
 
 if __name__ == '__main__':
