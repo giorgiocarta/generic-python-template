@@ -21,9 +21,18 @@ Run the app with:
 myapp
 ```
 
+Run tests with
+```bash
+make tests
+```
+or 
+```bash
+pytest tests
+```
+
 ## Docker
 
 ```
-make build
-makd run
+make docker-build
+makd docker-run
 ```
