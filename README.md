@@ -15,11 +15,14 @@ cp .example.env .env
 pip install -e .
 ```
 
+## Running the app
 Run the app with:
 
 ```bash
 myapp
 ```
+
+## testing
 
 Run tests with
 ```bash
