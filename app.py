@@ -1,5 +1,6 @@
 from dotenv import find_dotenv, load_dotenv
 from libs.hello_world import HelloWorld
+import sys
 
 load_dotenv(find_dotenv())
 
@@ -16,6 +17,7 @@ class App:
 def main():
     hello_world = HelloWorld()
     App(greetings=hello_world).run()
+    print(sys.argv)
 
 
 if __name__ == '__main__':
