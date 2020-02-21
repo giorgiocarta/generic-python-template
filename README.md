@@ -2,6 +2,7 @@
 
 A generic python template for small projects.
 
+Useful for python 101 tutorials.
 
 ## Setup local development environment
 
