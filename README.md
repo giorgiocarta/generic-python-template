@@ -22,7 +22,7 @@ Run the app with:
 myapp
 ```
 
-## testing
+## Testing
 
 Run tests with
 ```bash
